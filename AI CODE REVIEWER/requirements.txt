@@ -1,0 +1,10 @@
+streamlit
+guesslang
+flake8
+radon
+nltk
+openai
+pylint
+bandit
+pyccmetrics
+textblob
