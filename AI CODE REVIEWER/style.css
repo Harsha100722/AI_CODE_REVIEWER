@@ -1,0 +1,160 @@
+body,
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%, #27bfbf 100%);
+    background-size: 350% 350%;
+    animation: bgMove 15s ease-in-out infinite;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 60%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+    100% {
+        background-position: 0% 60%;
+    }
+}
+
+.title-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #49c6e5, #5b76ff, #91feff, #49c6e5);
+    background-size: 220% 220%;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.3em 0 0.9em 0;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 32px 0 #49c6e579, 0 2px 32px 0 #142245cc;
+    letter-spacing: 1.1px;
+    animation: gradientFlow 8s linear infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 10%;
+    }
+    50% {
+        background-position: 100% 90%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+.lang-detect {
+    color: #91feff;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    margin-top: 7px;
+    font-weight: 500;
+    text-shadow: 0 2px 8px #2fb7e955;
+}
+
+.stTextArea textarea {
+    background: #162033 !important;
+    color: #f2fafd !important;
+    border: 2px solid #49c6e5 !important;
+    border-radius: 9px !important;
+    font-size: 1.10rem !important;
+    box-shadow: 0 2px 10px #49c6e544;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.stTextArea textarea:focus {
+    border-color: #91feff !important;
+    box-shadow: 0 4px 16px #91feff77;
+}
+
+.stSelectbox>div {
+    background: #193042 !important;
+    color: #d7efff !important;
+    border: 2px solid #49c6e5 !important;
+    border-radius: 8px !important;
+    font-size: 1.08rem;
+    transition: border 0.2s, background 0.3s;
+}
+
+.stSelectbox>div:hover,
+.stSelectbox>div:focus-within {
+    border: 2px solid #91feff !important;
+    background: #1e4466 !important;
+}
+
+.stButton button {
+    background: linear-gradient(90deg, #49c6e5, #8379ee 90%);
+    color: #101a29 !important;
+    border-radius: 9px !important;
+    font-size: 1.17rem;
+    font-weight: 600;
+    margin-top: 17px;
+    border: none;
+    box-shadow: 0 3px 14px #49c6e566;
+    transition: background 0.3s, color 0.2s, box-shadow 0.3s;
+    animation: neonGlowBtn 2s ease-in-out infinite alternate;
+}
+
+.stButton button:hover,
+.stButton button:focus {
+    background: linear-gradient(90deg, #91feff, #49c6e5 100%);
+    color: #fff !important;
+    box-shadow: 0 6px 20px #49c6e5bb;
+}
+
+@keyframes neonGlowBtn {
+    0% {
+        filter: drop-shadow(0 0 4px #49c6e5);
+    }
+    100% {
+        filter: drop-shadow(0 0 12px #91feff);
+    }
+}
+
+.result-container {
+    background: #18213a;
+    color: #e1faff;
+    padding: 24px 22px 15px 22px;
+    font-size: 1.13rem;
+    border-radius: 15px;
+    border-left: 6px solid #49c6e5;
+    box-shadow: 0 4px 18px #0f428955;
+    margin-top: 23px;
+    margin-bottom: 13px;
+    white-space: pre-wrap !important;
+    animation: fadeAppear 0.8s;
+}
+
+@keyframes fadeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stAlert {
+    background: #203658bb !important;
+    border-left: 5px solid #49c6e5 !important;
+    color: #91feff !important;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #18213a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #49c6e5bb;
+    border-radius: 6px;
+}
